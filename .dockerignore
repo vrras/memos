@@ -9,7 +9,6 @@ coverage.out
 /.worktrees/
 
 # Not used by the image build
-/web/
 /docs/
 /.github/
 *.md
@@ -25,3 +24,4 @@ coverage.out
 /.vscode/
 /.claude/
 **/.DS_Store
+**/node_modules
