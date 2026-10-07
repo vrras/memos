@@ -4,7 +4,7 @@
 # The repo's scripts/Dockerfile expects `pnpm release` to be run on the host first.
 
 FROM node:24-alpine AS frontend
-RUN corepack enable
+RUN npm install -g pnpm@11.0.1
 WORKDIR /build
 COPY web/package.json web/pnpm-lock.yaml web/pnpm-workspace.yaml ./web/
 COPY web/patches ./web/patches
